@@ -931,7 +931,7 @@ function connectAccount(callback){
   onConnectedCB=callback||null;
 
   if(!token){
-    setCbox('fail','NO TOKEN ENTERED\n\nHow to get your token:\n1. Go to deriv.com\n2. Log in to your account\n3. Settings > API Token\n4. Create new token\n5. Tick READ + TRADE\n6. Copy and paste above\n7. Tap CONNECT ACCOUNT');
+    setCbox('fail','NO TOKEN ENTERED\n\nHow to get your token:\n1. Go to deriv.com\n2. Log in to your account\n3. Settings > API Token\n4. Create new token\n5. Tick APPLICATION INSIGHTS + TRADE\n6. Copy and paste above\n7. Tap CONNECT ACCOUNT');
     logEvent('No API token — check Config tab','error');return;
   }
   if(token.length<8){setCbox('fail','TOKEN TOO SHORT\nMake sure you copied the full token.');return;}
